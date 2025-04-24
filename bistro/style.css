@@ -1,0 +1,568 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/*General styles for the website */
+.back-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-button a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #57b1dc;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-button a:hover {
+    background-color: #d1633c;
+    transform: scale(1.05);
+}
+.news-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.news-button a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #57b1dc;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.news-button a:hover {
+    background-color: #d1633c;
+    transform: scale(1.05);
+}
+/* CSS for the Gallery Page starts here */
+
+.gallery-page {
+    background-color: #faf2e4;
+    margin: 0 10%;
+    font-family: sans-serif;
+}
+  
+.gallery-page h1 {
+    text-align: center;
+    font-family: 'Merienda', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 1px solid #57b1dc;
+    margin-top: 30px;
+}
+  
+.gallery-page h2 {
+    color: #d1633c;
+    font-size: 1em;
+}
+/* CSS for the Index Page starts here */
+/* Index Page Navigation Styles */
+.index-page {
+    background-color: #faf2e4;
+    background-image: url(gallery/bg2.png);
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #333;
+}
+.index-page h1 {
+    background-color: #f9ecd6;
+    color: #000000;
+    font-family: 'Merienda', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 8px solid #57b1dc;
+    margin-top: 8px;
+    padding: 20px 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+.index-page h2 {
+    font-family: 'Merienda', sans-serif;
+    font-size: 2em;
+    color: #d1633c;
+    font-size: 1em;
+}
+
+.index-page nav {
+    background-color: #d1633c;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.index-page nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.index-page nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    transition: color 0.3s;
+}
+
+.index-page nav ul li a:hover {
+    color: #F7D62B;
+    text-decoration: underline;
+}
+
+.index-page nav ul li {
+    display: inline-flex;
+    position: relative;
+}
+
+.index-page nav ul li:not(:last-child)::after {
+    content: "|";
+    color: wheat;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.4rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.index-page section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.index-page section h2 {
+    color: #d1633c;
+    margin-bottom: 20px;
+}
+
+.index-page section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.index-page .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.index-page .menu-item {
+    text-align: center;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.index-page .menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.index-page .menu-item h3 {
+    color: #d1633c;
+    margin: 10px 0;
+}
+
+.index-page .menu-item p {
+    color: #333;
+    font-size: 1rem;
+}
+
+.index-page .menu-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.index-page .order {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.index-page .order img {
+    width: 150px;
+    height: 150px;
+}
+
+.index-page .order:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.index-page .testimonials {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #faf2e4;
+}
+
+.index-page .testimonial {
+    margin: 20px auto;
+    max-width: 600px;
+    font-style: italic;
+    color: #333;
+}
+
+.index-page .testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #d1633c;
+}
+
+.index-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.index-page .container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.index-page .container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.index-page .container h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #d1633c;
+}
+
+.index-page .container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.index-page .container footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.index-page .container footer p {
+    margin: 5px 0;
+}
+
+.index-page .container footer img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.index-page .container footer img:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.index-page .container footer img:active {
+    opacity: 1;
+}
+
+.index-page .container footer img {
+    margin: 0 10px;
+}
+
+.index-page footer {
+    border-top: 1px solid #57b1dc;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.index-page footer img {
+    width: 40px;
+    height: 40px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.index-page .preview {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position below the link */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 200px;
+    border: 2px solid #d1633c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    z-index: 10;
+}
+
+.index-page .preview iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.index-page nav ol li:hover .preview {
+    display: block;
+}
+
+.index-page .back-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.index-page .back-button a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #57b1dc;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.index-page .back-button a:hover {
+    background-color: #d1633c;
+    transform: scale(1.05);
+}
+
+.index-page .summermenus-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.index-page .summermenus-button a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #d1633c;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.index-page .summermenus-button a:hover {
+    background-color: #b14f2e;
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero {
+        padding: 50px 20px;
+    }
+    nav ul li {
+        display: inline-block;
+        position: relative;
+    }
+    nav ul li:not(:last-child)::after {
+        content: "|";
+        color: wheat;
+        margin: 0 10px;
+        font-size: 1.4rem;
+    }
+
+}
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.index-page .order img {
+    animation: pulse 4s infinite;
+}
+
+/* CSS for the index page ends here */
+/* CSS for the menu page starts here */
+.menu-page {
+    background-color: #faf2e4;
+    margin: 0 10%;
+    font-family: sans-serif;
+}
+
+.menu-page h1 {
+    text-align: center;
+    font-family: 'Merienda', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 1px solid #57b1dc;
+    margin-top: 50px;
+}
+
+.menu-page h2 {
+    text-align: center;
+    color: #d1633c;
+    font-size: 1em;
+}
+
+.menu-page nav ol {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-page nav ol li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu-page nav ol li a {
+    text-decoration: none;
+    color: #57b1dc;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.menu-page nav ol li a:hover {
+    text-decoration: underline;
+}
+
+.menu-page .preview {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 200px;
+    border: 2px solid #d1633c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    z-index: 10;
+}
+
+.menu-page .preview iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.menu-page nav ol li:hover .preview {
+    display: block;
+}
+
+.menu-page .back-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.menu-page .back-button a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #57b1dc;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.menu-page .back-button a:hover {
+    background-color: #d1633c;
+    transform: scale(1.05);
+}
+
+.menu-page .summermenus-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.menu-page .summermenus-button a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #d1633c;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.menu-page .summermenus-button a:hover {
+    background-color: #b14f2e;
+    transform: scale(1.05);
+}
+/* CSS for the menu page ends here */
+/* CSS for the order page starts here */
+.order-page ol, ul { 
+    list-style-type: none;
+}
+.order-page {
+           background-color: #faf2e4;
+           margin: 0 10%;
+           font-family: sans-serif;
+           text-align: justify;
+       }
+       
+.order-page h1 {
+           color: #d1633c;
+           text-align: justify;
+           font-family: serif;
+           font-weight: bold;
+           text-transform: uppercase;
+           border-bottom: 1px solid #57b1dc;
+           margin-top: 10px;
+       }
+       
+.order-page h2, h3 {
+           color: #d1633c;
+           font-size: 1em;
+           text-align: left;
+       }
+
+.order-page h4 {
+           color:#412921;
+           font-size: 1em;
+           text-align: left;
+       }
+.order-page footer {
+        border-top: 1px solid #57b1dc;
+        text-align: right;
+        padding-top: 1em;
+       
+ } 
